@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { HomePage, LaunchPage,LaunchIndexPage , NavElement } from "./components/index";
+import { HomePage,LaunchPage  , NavElement } from "./components/index";
 
 function App() {
   return (
@@ -8,8 +8,7 @@ function App() {
       <NavElement />
       <Switch>
         <Route path="/" component={HomePage} exact={true}/>
-        <Route path="/Launch" component={LaunchPage} />
-        <Route path="/" component={LaunchIndexPage}/>
+        <Route path="/Launch" component={LaunchPage } />
       </Switch>
     </Router>
   );
