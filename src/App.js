@@ -1,13 +1,15 @@
 import './App.css';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { HomePage } from "./components/Home";
-import {NavElement} from "./components/NavElement";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HomePage, LaunchPage, NavElement } from "./components/index";
 
 function App() {
   return (
     <Router>
-    <NavElement />
-      <Route path="/" component={HomePage} />
+      <NavElement />
+      <Switch>
+        <Route path="/" component={HomePage} exact={true}/>
+        <Route path="/Launch" component={LaunchPage} />
+      </Switch>
     </Router>
   );
 }
