@@ -6,7 +6,7 @@ export const LaunchIndexPage = () => {
             <li key={slug}>
                     <h2>{name}</h2>
                     <img src={img} alt={name} />
-            </li>
+                    </li>
         ))}
-    </ul>
+    </ul >
 }

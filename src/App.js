@@ -9,6 +9,7 @@ function App() {
       <Switch>
         <Route path="/" component={HomePage} exact={true}/>
         <Route path="/Launch" component={LaunchPage } />
+        <Route path=":slug" component={LaunchPage } />
       </Switch>
     </Router>
   );
